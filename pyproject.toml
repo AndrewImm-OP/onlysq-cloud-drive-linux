@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onlysq-drive-linux"
+version = "1.0.0"
+description = "CLI & FUSE filesystem that mounts OnlySQ Cloud as a local directory on Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "AndrewImm-OP", email = "bessmertnyja89@gmail.com" }
+]
+license = "MIT"
+keywords = ["onlysq", "cloud", "fuse", "drive", "mount", "filesystem"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: POSIX :: Linux",
+  "Environment :: Console",
+  "Topic :: System :: Filesystems",
+]
+dependencies = [
+  "requests>=2.31,<3",
+  "pyfuse3>=3.2,<4",
+  "trio>=0.22",
+]
+
+[project.urls]
+Homepage = "https://github.com/AndrewImm-OP/onlysq-cloud-drive-linux"
+"Original (Windows)" = "https://github.com/fakelag28/onlysq-cloud-drive"
+"Windows version (PyPI)" = "https://pypi.org/project/onlysq-drive/"
+
+[project.scripts]
+onlysq-drive = "onlysq_drive.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
