@@ -10,6 +10,8 @@
 
 > Linux-порт оригинального проекта [onlysq-cloud-drive](https://github.com/fakelag28/onlysq-cloud-drive) от [fakelag28](https://github.com/fakelag28).
 > Windows-версия: [onlysq-drive](https://pypi.org/project/onlysq-drive/)
+>
+> Update: добавлена официальная поддержка Linux =D
 
 После настройки у пользователя появляется полноценный каталог рядом с остальными дисками, с которым можно работать как с обычным:
 
